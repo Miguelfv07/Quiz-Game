@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 64202239}
   - component: {fileID: 64202238}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -108}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.00001049, y: -122}
+  m_SizeDelta: {x: 190.9882, y: 55.354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &64202238
 MonoBehaviour:
@@ -973,8 +973,6 @@ RectTransform:
   m_Children:
   - {fileID: 328327055}
   - {fileID: 894496019}
-  - {fileID: 583796988}
-  - {fileID: 1869407066}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1461,7 +1459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Iniciar
+  m_text: START
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1488,8 +1486,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1777,7 +1775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Facil
+  m_text: Easy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1804,7 +1802,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.8
+  m_fontSize: 32
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1879,16 +1877,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583796987}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 339732483}
+  m_Father: {fileID: 865599452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: 99}
+  m_AnchoredPosition: {x: 32, y: 97}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583796989
@@ -1911,7 +1909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tema
+  m_text: Theme
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1938,8 +1936,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2022,9 +2020,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0cf9d9d4eeb029342b3218f9c2ec392a, type: 2}
   - {fileID: 11400000, guid: cfcf544028ca45f468310360273ec77a, type: 2}
   - {fileID: 11400000, guid: e4df591e09d65c6478d3f3bf4a748cc4, type: 2}
+  - {fileID: 11400000, guid: 3b5c5c2270b9d894ba1dc3c85f8e47eb, type: 2}
+  - {fileID: 11400000, guid: 7e198bc11ce550f488ed481ef2e75bf7, type: 2}
   currentQuiz: {fileID: 0}
   dificulty: 0
-  theme: 1
+  theme: 0
 --- !u!4 &597114015
 Transform:
   m_ObjectHideFlags: 0
@@ -2162,6 +2162,10 @@ MonoBehaviour:
   - {fileID: 2042069071}
   - {fileID: 258268572}
   questionText: {fileID: 1642859991}
+  menuWindow: {fileID: 894496018}
+  startButton: {fileID: 64202238}
+  dificultyDropdown: {fileID: 2045267994}
+  themeDropdown: {fileID: 865599453}
 --- !u!4 &725324683
 Transform:
   m_ObjectHideFlags: 0
@@ -2398,7 +2402,7 @@ GameObject:
   - component: {fileID: 865599454}
   - component: {fileID: 865599453}
   m_Layer: 5
-  m_Name: Dropdown (2)
+  m_Name: 'Theme Dropdown '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2416,6 +2420,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 583796988}
   - {fileID: 1787836583}
   - {fileID: 1372439466}
   - {fileID: 1337167064}
@@ -2423,8 +2428,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -209, y: 35.91823}
-  m_SizeDelta: {x: 136.0545, y: 44.0855}
+  m_AnchoredPosition: {x: -202, y: 2}
+  m_SizeDelta: {x: 147.3229, y: 57.961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865599453
 MonoBehaviour:
@@ -2476,11 +2481,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "Portugu\xEAs"
+    - m_Text: Portuguese
       m_Image: {fileID: 0}
-    - m_Text: "Matem\xE1tica"
+    - m_Text: Math
       m_Image: {fileID: 0}
-    - m_Text: Geografia
+    - m_Text: Geography
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2555,6 +2560,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2045267993}
+  - {fileID: 1869407066}
   - {fileID: 865599452}
   - {fileID: 64202237}
   m_Father: {fileID: 339732483}
@@ -4008,7 +4014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5000076, y: -0.5000019}
+  m_AnchoredPosition: {x: -7.5000076, y: -0.4999981}
   m_SizeDelta: {x: -35, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787836584
@@ -4031,7 +4037,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Portugu\xEAs"
+  m_text: Portuguese
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4058,7 +4064,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.1
+  m_fontSize: 21.9
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4169,16 +4175,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869407065}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 339732483}
+  m_Father: {fileID: 894496019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 172, y: 99}
+  m_AnchoredPosition: {x: 190, y: 99}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869407067
@@ -4201,7 +4207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dificuldade
+  m_text: Dificulty
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4228,8 +4234,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4412,6 +4418,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942920434}
   m_CullTransparentMesh: 1
+--- !u!1 &1987517307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1987517308}
+  - component: {fileID: 1987517309}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1987517308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987517307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 424.89508, y: 174.12259, z: 6.602417}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987517309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987517307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f55a0151f3c904ba504044eb78493a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2016714790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,7 +4730,7 @@ GameObject:
   - component: {fileID: 2045267995}
   - component: {fileID: 2045267994}
   m_Layer: 5
-  m_Name: Dropdown (1)
+  m_Name: Dificulty Dropdown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4705,8 +4755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 152.05072, y: 35.91823}
-  m_SizeDelta: {x: 136.0545, y: 44.0855}
+  m_AnchoredPosition: {x: 177, y: -0}
+  m_SizeDelta: {x: 167.0428, y: 57.961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045267994
 MonoBehaviour:
@@ -4758,11 +4808,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Facil
+    - m_Text: Easy
       m_Image: {fileID: 0}
-    - m_Text: "M\xE9dio"
+    - m_Text: Medium
       m_Image: {fileID: 0}
-    - m_Text: Dificil
+    - m_Text: Hard
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4815,3 +4865,4 @@ SceneRoots:
   - {fileID: 339732483}
   - {fileID: 725324683}
   - {fileID: 597114015}
+  - {fileID: 1987517308}
