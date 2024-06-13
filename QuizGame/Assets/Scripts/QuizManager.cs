@@ -10,6 +10,19 @@ public class QuizManager : MonoBehaviour
     [SerializeField] Quiz.Dificulty dificulty;
     [SerializeField] Quiz.Theme theme;
 
+    int rightAnswers;
+
+    #region Singleton
+
+    public static QuizManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    #endregion
+
     public void SelectQuiz(Quiz.Theme themeSelected, Quiz.Dificulty dificultySelected)
     {
         Quiz quiz = quizList[Random.Range(0, quizList.Length)];
@@ -22,6 +35,23 @@ public class QuizManager : MonoBehaviour
         {
             SelectQuiz(themeSelected, dificultySelected);
         }
+    }
+
+    public void CheckAnswer(int answerSelected)
+
+    {
+        if( answerSelected == currentQuiz.CorrectAnswer)
+
+        {
+            rightAnswers++;
+        }
+
+        else
+        {
+            GameManager.Instance.GameOver();
+        }
+
+        UIManager.instance.HighLightButton(currentQuiz.CorrectAnswer, answerSelected);
     }
 
 

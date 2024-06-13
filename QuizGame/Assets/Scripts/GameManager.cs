@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     Quiz.Dificulty dificulty;
     Quiz.Theme theme;
 
+    public Quiz.Dificulty Dificulty { get => dificulty; }
+    public Quiz.Theme Theme { get => theme;  }
+
     private void Start()
     {
         quizManager= FindObjectOfType<QuizManager>();
@@ -31,7 +34,14 @@ public class GameManager : MonoBehaviour
         UIManager.instance.SetMenu(false);
         dificulty = (Quiz.Dificulty)dificultySelected;
         theme = (Quiz.Theme)themeSelected;
-        quizManager.SelectQuiz(theme, dificulty); 
+        quizManager.SelectQuiz(Theme, Dificulty); 
 
     }
+
+    public void GameOver()
+    {
+
+    }
+
+
 }
