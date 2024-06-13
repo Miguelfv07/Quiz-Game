@@ -51,7 +51,7 @@ public class QuizManager : MonoBehaviour
             GameManager.Instance.GameOver();
         }
 
-        UIManager.instance.HighLightButton(currentQuiz.CorrectAnswer, answerSelected);
+        UIManager.instance.HighlightButton(currentQuiz.CorrectAnswer, answerSelected);
     }
 
 
